@@ -4,7 +4,7 @@ library(shinycssloaders)
 df = read.csv("data/dailyDataAQI.csv")
 df$Date = as.Date(df$Date)
 
-df24 = read.csv("https://raw.githubusercontent.com/waitasecant/Delhi-Air-Pollution-Dashboard/main/myApp/data/realTimeDelhi.csv")
+df24 = read.csv("https://raw.githubusercontent.com/waitasecant/Air-Pollution-Dashboard/main/myApp/data/realTimeDelhi.csv")
 df24$Date =as.POSIXct(df24$Date, format = "%Y-%m-%d %H:%M:%S")
 
 
