@@ -7,7 +7,7 @@ df$Date = as.Date(df$Date)
 df24 = read.csv("https://raw.githubusercontent.com/waitasecant/Air-Pollution-Dashboard/main/myApp/data/realTimeDelhi.csv")
 df24$Date =as.POSIXct(df24$Date, format = "%Y-%m-%d %H:%M:%S")
 
-aqitab = c("0-50", "51-100", "101-200", "201-300", "301-400", ">401")
+aqitab = c("0-50", "51-100", "101-200", "201-300", "301-400", "401+")
 pm25tab = c("0-30", "31-60", "61-90", "91-120", "121-250", "250+")
 pm10tab = c("0-50", "51-100", "101-250", "251-350", "351-430", "430+")
 nh3tab = c("0-200", "201-400", "401-800", "801-1200", "1200-1800", "1800+")
