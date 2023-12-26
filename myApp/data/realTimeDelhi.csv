@@ -358,7 +358,6 @@ Date,Site,State,Latitude,Longitude,PM2.5,PM10,NH3,SO2
 2023-12-26 22:35:00,Bawana,Delhi,28.7762,77.051074,368.0,609.0,59.7,2.1
 2023-12-26 22:45:00,Bawana,Delhi,28.7762,77.051074,368.0,609.0,62.0,2.2
 2023-12-26 22:50:00,Bawana,Delhi,28.7762,77.051074,368.0,609.0,63.3,2.2
-2023-12-25 17:30:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,184.0,274.0,62.0,1.9
 2023-12-25 18:00:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,196.0,307.0,53.6,1.9
 2023-12-25 18:30:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,196.0,307.0,53.6,1.7
 2023-12-25 18:45:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,196.0,307.0,65.4,1.9
@@ -662,7 +661,6 @@ Date,Site,State,Latitude,Longitude,PM2.5,PM10,NH3,SO2
 2023-12-26 20:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,74.3,9.2
 2023-12-26 21:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,71.1,11.2
 2023-12-26 22:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,75.2,14.6
-2023-12-25 17:35:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,143.0,206.0,60.1,1.0
 2023-12-25 18:05:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,168.0,251.0,66.9,1.7
 2023-12-25 18:35:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,168.0,251.0,64.4,1.3
 2023-12-25 18:50:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,168.0,251.0,65.7,0.7
