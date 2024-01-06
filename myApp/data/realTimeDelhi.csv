@@ -330,7 +330,6 @@ Date,Site,State,Latitude,Longitude,PM2.5,PM10,NH3,SO2
 2024-01-06 22:05:00,Bawana,Delhi,28.7762,77.051074,284.0,451.0,47.9,1.9
 2024-01-06 22:35:00,Bawana,Delhi,28.7762,77.051074,284.0,451.0,43.9,2.0
 2024-01-06 22:50:00,Bawana,Delhi,28.7762,77.051074,284.0,451.0,42.6,2.1
-2024-01-05 17:30:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,269.0,483.0,54.7,2.3
 2024-01-05 18:00:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,228.0,421.0,53.4,2.0
 2024-01-05 18:30:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,228.0,421.0,55.5,2.0
 2024-01-05 18:45:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,228.0,421.0,48.1,1.7
@@ -615,7 +614,6 @@ Date,Site,State,Latitude,Longitude,PM2.5,PM10,NH3,SO2
 2024-01-06 20:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,56.9,6.1
 2024-01-06 21:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,56.4,6.3
 2024-01-06 22:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,56.6,7.2
-2024-01-05 17:35:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,188.0,322.0,82.0,2.7
 2024-01-05 18:05:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,191.0,327.0,81.8,3.7
 2024-01-05 18:35:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,191.0,327.0,83.2,2.6
 2024-01-05 18:50:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,191.0,327.0,85.3,2.3
