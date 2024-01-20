@@ -318,7 +318,6 @@ Date,Site,State,Latitude,Longitude,PM2.5,PM10,NH3,SO2
 2024-01-20 10:50:00,Bawana,Delhi,28.7762,77.051074,174.0,257.0,52.1,1.9
 2024-01-20 11:05:00,Bawana,Delhi,28.7762,77.051074,189.0,288.0,51.3,1.9
 2024-01-20 11:35:00,Bawana,Delhi,28.7762,77.051074,189.0,288.0,46.3,2.0
-2024-01-19 06:15:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,130.0,218.0,58.9,1.8
 2024-01-19 07:15:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,133.0,221.0,49.2,1.3
 2024-01-19 07:45:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,133.0,-1.0,45.8,1.1
 2024-01-19 08:00:00,Dr. Karni Singh Shooting Range,Delhi,28.498571,77.26484,117.0,188.0,44.0,1.3
@@ -568,7 +567,6 @@ Date,Site,State,Latitude,Longitude,PM2.5,PM10,NH3,SO2
 2024-01-20 10:55:00,Jahangirpuri,Delhi,28.73282,77.170633,140.0,255.0,35.1,13.0
 2024-01-20 11:05:00,Jahangirpuri,Delhi,28.73282,77.170633,168.0,305.0,34.6,12.5
 2024-01-20 11:45:00,Jahangirpuri,Delhi,28.73282,77.170633,168.0,305.0,-1.0,12.8
-2024-01-19 06:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,63.0,-1.0
 2024-01-19 07:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,71.6,1.9
 2024-01-19 08:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,74.3,1.7
 2024-01-19 09:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,72.1,0.9
