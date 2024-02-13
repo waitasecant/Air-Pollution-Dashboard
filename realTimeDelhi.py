@@ -144,7 +144,7 @@ df = pd.DataFrame(
 )
 
 model = pickle.load(open("DTAQI.pkl", "rb"))
-aqiVal = model.predict(df["PM2.5"])
+aqiVal = model.predict(df[["PM2.5"]])
 aqiVal = [int(i) for i in aqiVal]
 df["AQI"] = aqiVal
 
