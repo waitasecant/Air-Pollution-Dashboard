@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 from datetime import datetime
+import pickle
 
 # ITO not here
 newSite = [
@@ -141,6 +142,12 @@ df = pd.DataFrame(
         "SO2",
     ],
 )
+
+model = pickle.load(open("DTAQI.pkl", "rb"))
+aqiVal = model.predict(df["PM2.5"])
+aqiVal = [int(i) for i in aqiVal]
+df["AQI"] = aqiVal
+
 df_old = pd.read_csv("myApp//data//realTimeDelhi.csv")
 df = pd.concat([df_old, df], axis=0)
 df.drop_duplicates(inplace=True)
