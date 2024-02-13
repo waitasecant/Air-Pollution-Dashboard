@@ -3,4 +3,4 @@ lxml
 requests
 pandas
 datetime
-pickle
+pickle5
