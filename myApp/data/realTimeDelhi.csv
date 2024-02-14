@@ -557,31 +557,6 @@ Date,Site,State,Latitude,Longitude,PM2.5,PM10,NH3,SO2,AQI
 2024-02-14 14:30:00,Jahangirpuri,Delhi,28.73282,77.170633,125.0,238.0,25.9,5.4,387
 2024-02-14 14:55:00,Jahangirpuri,Delhi,28.73282,77.170633,125.0,238.0,27.0,5.1,387
 2024-02-14 15:05:00,Jahangirpuri,Delhi,28.73282,77.170633,97.0,193.0,22.4,5.2,356
-2024-02-13 10:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,91.5,4.1,0
-2024-02-13 10:55:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,100.0,4.3,0
-2024-02-13 11:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,94.9,4.2,0
-2024-02-13 12:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,96.2,-1.0,0
-2024-02-13 13:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,93.2,8.2,0
-2024-02-13 14:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,95.4,5.9,0
-2024-02-13 15:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,92.9,3.8,0
-2024-02-13 15:55:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,85.5,2.4,0
-2024-02-13 16:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,83.8,2.4,0
-2024-02-13 17:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,66.3,1.3,0
-2024-02-13 18:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,48.3,-1.0,0
-2024-02-13 18:55:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,47.2,6.7,0
-2024-02-13 19:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,61.6,6.7,0
-2024-02-13 22:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,88.7,12.2,22
-2024-02-13 23:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,94.8,13.5,22
-2024-02-14 00:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,101.9,-1.0,22
-2024-02-14 01:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,99.8,1.5,22
-2024-02-14 08:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,98.8,0.9,22
-2024-02-14 09:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,94.9,-1.0,22
-2024-02-14 10:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,95.4,4.1,22
-2024-02-14 11:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,86.0,6.4,22
-2024-02-14 12:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,79.9,-1.0,22
-2024-02-14 13:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,80.8,10.8,22
-2024-02-14 14:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,74.9,8.2,22
-2024-02-14 15:00:00,Jawaharlal Nehru Stadium,Delhi,28.58028,77.233829,-1.0,-1.0,76.4,8.4,22
 2024-02-13 10:05:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,299.0,428.0,83.7,5.9,0
 2024-02-13 10:20:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,299.0,428.0,85.7,4.5,0
 2024-02-13 10:35:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,299.0,428.0,86.5,4.3,0

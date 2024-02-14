@@ -1,14 +1,18 @@
 from bs4 import BeautifulSoup
 import requests
+import numpy as np
 import pandas as pd
 from datetime import datetime
 import pickle
+
+# Copy-on-write enabled
+pd.options.mode.copy_on_write = True 
 
 # ITO not here
 newSite = [
     "Bawana",
     "Nehru Nagar",
-    "Jawaharlal Nehru Stadium",
+    # "Jawaharlal Nehru Stadium",
     "Dr. Karni Singh Shooting Range",
     "Major Dhyan Chand National Stadium",
     "Patparganj",
@@ -40,7 +44,7 @@ delhiSiteDetails = {
     "Dr. Karni Singh Shooting Range": [28.498571, 77.26484],
     "Dwarka Sector-8": [28.5710274, 77.0719006],
     "Jahangirpuri": [28.73282, 77.170633],
-    "Jawaharlal Nehru Stadium": [28.58028, 77.233829],
+    # "Jawaharlal Nehru Stadium": [28.58028, 77.233829],
     "Major Dhyan Chand National Stadium": [28.611281, 77.237738],
     "Mandir Marg": [28.636429, 77.201067],
     "Mundka": [28.684678, 77.076574],
@@ -67,7 +71,7 @@ weblinks = {
     "Dr. Karni Singh Shooting Range": "https://www.dpccairdata.com/dpccairdata/display/AallStationView5MinData.php?stName=S2FybmlTaW5naFNob290aW5nUmFuZ2U=",
     "Dwarka Sector-8": "https://www.dpccairdata.com/dpccairdata/display/AallStationView5MinData.php?stName=RHdhcmthU2VjdHJvOA==",
     "Jahangirpuri": "https://www.dpccairdata.com/dpccairdata/display/AallStationView5MinData.php?stName=SmFoYW5naXJwdXJp",
-    "Jawaharlal Nehru Stadium": "https://www.dpccairdata.com/dpccairdata/display/AallStationView5MinData.php?stName=SkxOU3RhZGl1bQ==",
+    # "Jawaharlal Nehru Stadium": "https://www.dpccairdata.com/dpccairdata/display/AallStationView5MinData.php?stName=SkxOU3RhZGl1bQ==",
     "Major Dhyan Chand National Stadium": "https://www.dpccairdata.com/dpccairdata/display/AallStationView5MinData.php?stName=TmF0aW9uYWxTdGFkaXVt",
     "Mandir Marg": "https://www.dpccairdata.com/dpccairdata/display/AallStationView5MinData.php?stName=TWFuZGlybWFyZw==",
     "Mundka": "https://www.dpccairdata.com/dpccairdata/display/AallStationView5MinData.php?stName=TXVuZGth",
@@ -143,13 +147,22 @@ df = pd.DataFrame(
     ],
 )
 
-model = pickle.load(open("DTAQI.pkl", "rb"))
-aqiVal = model.predict(df[["PM10"]])
-aqiVal = [int(i) for i in aqiVal]
-df["AQI"] = aqiVal
-
+df["AQI"] = -1
 df_old = pd.read_csv("myApp//data//realTimeDelhi.csv")
 df = pd.concat([df_old, df], axis=0)
 df.drop_duplicates(inplace=True)
 df.sort_values(by=["Site", "Date"], inplace=True)
+
+# Imputing PM10 values since only they are being used in pickle model
+pm10Impute = []
+for st in df["Site"].unique():
+    series = df[df["Site"]==st]["PM10"]
+    series.replace(-1.0,np.mean(series), inplace=True)
+    pm10Impute.extend(series.values)
+df["PM10"] = pm10Impute
+
+model = pickle.load(open("DTAQI.pkl", "rb"))
+aqiVal = model.predict(df[["PM10"]])
+aqiVal = [int(i) for i in aqiVal]
+df["AQI"] = aqiVal  
 df.to_csv("myApp//data//realTimeDelhi.csv", index=False)

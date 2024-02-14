@@ -1,6 +1,9 @@
 import pandas as pd
 from datetime import datetime, timedelta
 
+# Copy-on-write enabled
+pd.options.mode.copy_on_write = True 
+
 df = pd.read_csv("myApp//data//realTimeDelhi.csv")
 df["Date"] = [datetime.strptime(d, "%Y-%m-%d %H:%M:%S") for d in df["Date"]]
 
