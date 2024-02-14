@@ -159,6 +159,7 @@ for st in df["Site"].unique():
     series = df[df["Site"]==st]["PM10"]
     series.replace(-1.0,np.mean(series), inplace=True)
     pm10Impute.extend(series.values)
+pm10Impute = [round(i,1) for i in pm10Impute]
 df["PM10"] = pm10Impute
 
 model = pickle.load(open("DTAQI.pkl", "rb"))
