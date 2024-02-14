@@ -14,7 +14,7 @@ nh3tab = c("0-200", "201-400", "401-800", "801-1200", "1200-1800", "1800+")
 so2tab = c("0-40", "41-80", "81-380", "381-800", "801-1600", "1600+")
 categorytab = c("Good", "Satisfactory", "Moderate", "Poor", "Very Poor", "Severe")
 
-naaqstab24 = data.frame(list("Category"=categorytab, "PM2.5"=pm25tab, "PM10"=pm10tab, "NH3" = nh3tab, "SO2" = so2tab), check.names = FALSE)
+naaqstab24 = data.frame(list("Category"=categorytab,  "AQI"=aqitab, "PM2.5"=pm25tab, "PM10"=pm10tab, "NH3" = nh3tab, "SO2" = so2tab), check.names = FALSE)
 naaqstab = data.frame(list("Category"=categorytab, "AQI"=aqitab,"PM2.5"=pm25tab, "PM10"=pm10tab, "NH3" = nh3tab, "SO2" = so2tab), check.names = FALSE)
 
 col = list("darkredp"=rgb(0.78, 0.063, 0.063), "redp"=rgb(1, 0.165, 0), "orangep"=rgb(1, 0.702, 0),
@@ -350,7 +350,7 @@ ui = fluidPage(
                                                                           align="center",style = "font-size:18pt"))),
                                    fluidRow(column(4,
                                                    selectInput("site24", "Station", getDelhiSites(df24), width="400pt"),
-                                                   selectInput("param24", "Pollutant", c("PM2.5", "PM10", "NH3", "SO2"), width="400pt"),
+                                                   selectInput("param24", "Pollutant", c("AQI","PM2.5", "PM10", "NH3", "SO2"), width="400pt"),
                                                    checkboxInput("check24", "Fill the area under the curve", value = FALSE),
                                                    actionButton("plotbutton24", "PLOT",class = "btn-sm btn-primary", width="400pt"),
                                                    br(),br(),br(),br(),br(),br(),br(),
