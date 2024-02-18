@@ -1,7 +1,7 @@
 # Air-Pollution-Dashboard
 [![build](https://github.com/waitasecant/Air-Pollution-Dashboard/actions/workflows/main.yml/badge.svg)](https://github.com/waitasecant/Air-Pollution-Dashboard/actions/workflows/main.yml)
 [![License](https://img.shields.io/github/license/waitasecant/Air-Pollution-Dashboard?color=neon)](LICENSE)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwaitasecant.shinyapps.io%2Fmyapp&up_message=dashboard&up_color=neon&down_message=dashboard&down_color=neon&label=shiny&link=https%3A%2F%2Fwaitasecant.shinyapps.io%2Fmyapp)](https://waitasecant.shinyapps.io/myapp)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fgoogle.com&up_message=dashboard&up_color=neon&down_message=dashboard&down_color=neon&label=shiny)](https://waitasecant.shinyapps.io/myapp)
 
 *An interactive shiny dashboard to help you monitor ambient air quality in Delhi*
 
