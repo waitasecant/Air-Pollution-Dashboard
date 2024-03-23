@@ -468,6 +468,7 @@ Date,Site,State,Latitude,Longitude,PM2.5,PM10,NH3,SO2,AQI
 2024-03-24 01:50:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,91.0,173.0,40.3,3.0,340
 2024-03-24 02:05:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,85.0,144.0,-1.0,-1.0,324
 2024-03-24 02:20:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,85.0,144.0,-1.0,-1.0,324
+2024-03-24 02:35:00,Major Dhyan Chand National Stadium,Delhi,28.611281,77.237738,85.0,144.0,44.8,1.3,324
 2024-03-22 21:10:00,Mandir Marg,Delhi,28.636429,77.201067,81.0,155.0,45.6,2.7,324
 2024-03-22 21:30:00,Mandir Marg,Delhi,28.636429,77.201067,81.0,155.0,45.0,2.8,324
 2024-03-22 21:45:00,Mandir Marg,Delhi,28.636429,77.201067,81.0,155.0,45.3,2.7,324
