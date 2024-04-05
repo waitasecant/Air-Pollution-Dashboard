@@ -11,7 +11,7 @@ The real-time dashboard mainly feautres two types of visualization
 
 ### 1. Choropleth Maps
 
-Maps displaying sppatial distribution of monthly average of the pollution concentration choropleth maps built using Inverse Weighted Interpolation over $10\times 10$ km grid, taking into account data from stations nearby Delhi in Haryana and UP.
+Maps displaying spatial distribution of monthly average of the pollution concentration choropleth maps built using Inverse Weighted Interpolation over $10\times 10$ km grid, taking into account data from stations nearby Delhi in Haryana and UP.
 
 *A representation of what went behind creating the maps.
 ![alt text](https://github.com/waitasecant/Air-Pollution-Dashboard/blob/main/choropleth.png?raw=true)
