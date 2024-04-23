@@ -150,15 +150,19 @@ df = pd.DataFrame(
 df["AQI"] = -1
 df_old1 = pd.read_csv("myApp//data//realTimeDelhi.csv")
 df_old2 = pd.read_csv("myApp//data//monthlyDelhi.csv")
+df_old3 = pd.read_csv("myApp//data//totalDelhi.csv")
 
 df1 = pd.concat([df_old1, df], axis=0)
 df2 = pd.concat([df_old2, df], axis=0)
+df3 = pd.concat([df_old3, df], axis=0)
 
 df1.drop_duplicates(inplace=True)
 df2.drop_duplicates(inplace=True)
+df3.drop_duplicates(inplace=True)
 
 df1.sort_values(by=["Site", "Date"], inplace=True)
 df2.sort_values(by=["Site", "Date"], inplace=True)
+df3.sort_values(by=["Site", "Date"], inplace=True)
 
 # Imputing PM10 values since only they are being used in pickle model
 pm10Impute = []
@@ -177,6 +181,14 @@ for st in df2["Site"].unique():
 pm10Impute = [round(i,1) for i in pm10Impute]
 df2["PM10"] = pm10Impute
 
+pm10Impute = []
+for st in df3["Site"].unique():
+    series = df3[df3["Site"]==st]["PM10"]
+    series.replace(-1.0,np.mean(series), inplace=True)
+    pm10Impute.extend(series.values)
+pm10Impute = [round(i,1) for i in pm10Impute]
+df3["PM10"] = pm10Impute
+
 
 model = pickle.load(open("DTAQI.pkl", "rb"))
 
@@ -186,8 +198,13 @@ aqiVal1 = [int(i) for i in aqiVal1]
 aqiVal2 = model.predict(df2[["PM10"]])
 aqiVal2 = [int(i) for i in aqiVal2]
 
+aqiVal3 = model.predict(df2[["PM10"]])
+aqiVal3 = [int(i) for i in aqiVal3]
+
 df1["AQI"] = aqiVal1
 df2["AQI"] = aqiVal2
+df3["AQI"] = aqiVal3
 
 df1.to_csv("myApp//data//realTimeDelhi.csv", index=False)
 df2.to_csv("myApp//data//monthlyDelhi.csv", index=False)
+df3.to_csv("myApp//data//totalDelhi.csv", index=False)
