@@ -198,7 +198,7 @@ aqiVal1 = [int(i) for i in aqiVal1]
 aqiVal2 = model.predict(df2[["PM10"]])
 aqiVal2 = [int(i) for i in aqiVal2]
 
-aqiVal3 = model.predict(df2[["PM10"]])
+aqiVal3 = model.predict(df3[["PM10"]])
 aqiVal3 = [int(i) for i in aqiVal3]
 
 df1["AQI"] = aqiVal1
