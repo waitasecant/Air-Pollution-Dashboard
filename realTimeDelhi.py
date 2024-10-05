@@ -90,6 +90,7 @@ weblinks = {
     "Wazirpur": "https://www.dpccairdata.com/dpccairdata/display/AallStationView5MinData.php?stName=V2F6aXJwdXI=",
 }
 
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
 
 def getVal(a):
     if "." not in a:
@@ -101,7 +102,7 @@ def getVal(a):
 
 data = []
 for site in weblinks:
-    r = requests.get(weblinks[site]).text
+    r = requests.get(weblinks[site], headers={"User-Agent": user_agent}).text       
     soup = BeautifulSoup(r, "lxml")
     table1 = soup.find_all("tr", class_="tdcolor1")
     table2 = soup.find_all("tr", class_="tdcolor2")
